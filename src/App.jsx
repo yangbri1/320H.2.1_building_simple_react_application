@@ -9,6 +9,10 @@ import Content from './components/Content';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+import coffeePot from './assets/caffeine.svg';
+import flower from './images/flower.svg';
+import playButton from '/play_button.svg';
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -62,19 +66,24 @@ function App() {
     // </>
 
     <>
-      <h1>KPOP Groups</h1>
+      <Header />
+      <a href="https://www.youtube.com/watch?v=8Ebqe2Dbzls">
+        <button className="logo" alt="click to play">Play▶️<img src="{playButton}" alt="" /></button>
+        
+      </a>
+      <h1> Take a breather...</h1>
       <div>
-         <a href="https://vite.dev" target="_blank">
-           <img src={viteLogo} className="logo" alt="Vite logo" />
+         <a href="https://iconify.design/getting-started/" target="_blank">
+           <img src={coffeePot} className="logo" alt="coffee icon" />
          </a>
-         <a href="https://react.dev" target="_blank">
-           <img src={reactLogo} className="logo react" alt="React logo" />
+         <a href="https://www.freepik.com/free-vector/blue-white-striped-dahlia-flower_342443975.htm#fromView=search&page=1&position=18&uuid=282ba311-e614-44fc-9100-37bb5c37b934" target="_blank">
+           <img src={flower} className="logo react" alt="flower" />
          </a>
       </div>
-      <Header />
-      <Content color="blue" text="This is my first React Application!" />
-      <Content color="red" text="Wish me luck..." />
-      <Content color="green" text="I think I've got it!" />
+      
+      <Content color="hsla(360, 100%, 100%, 1.0)" text="🍻APT🍻APT🍻APT" />
+      <Content color="#e63946" text="HOLD ON!! THAT AIN'T THE WEEKND ..." />
+      <Content color="#f4a261" text="BRUNO !!??" />
       <Footer />
     </>
   );

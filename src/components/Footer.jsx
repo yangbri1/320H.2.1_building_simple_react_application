@@ -1,5 +1,5 @@
 function Footer() {
-    return (<h1>Created by Me, of course.</h1>);
+    return (<h2>🎃👻🍬🧙🕸️🕯️</h2>);
 }
 
 export default Footer;

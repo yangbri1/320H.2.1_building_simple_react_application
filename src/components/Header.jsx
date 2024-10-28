@@ -3,7 +3,7 @@
 // }
 
 function Header() {
-    return (<h1>Simple React Application</h1>);
+    return (<h1>Music Cue</h1>);
 }
 
 export default Header;

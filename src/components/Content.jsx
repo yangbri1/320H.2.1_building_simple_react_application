@@ -21,7 +21,7 @@ import Header from "./Header.jsx";
 // }
 
 function Content(props) {
-    return (<p style={{color: props.color}}>{props.text}</p>);
+    return (<h3 style={{color: props.color}}>{props.text}</h3>);
 }
 
 export default Content;
